@@ -1,0 +1,21 @@
+function rate(stars) {
+  const result = document.getElementById("rating-result");
+  const starElements = document.querySelectorAll(".stars span");
+  starElements.forEach((el, index) => {
+    el.classList.toggle("active", index < stars);
+  });
+  result.textContent = `You rated us ${stars} stars | لقد قيّمتنا بـ ${stars} نجوم`;
+}
+function loginUser() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  const message = document.getElementById("login-message");
+
+  if (user === "teacher" && pass === "1234") {
+    message.textContent = "Welcome, teacher! | مرحبًا أستاذ!";
+    // يمكنك توجيه المستخدم إلى لوحة التحكم هنا
+  } else {
+    message.textContent = "Invalid credentials | بيانات غير صحيحة";
+  }
+  return false;
+}

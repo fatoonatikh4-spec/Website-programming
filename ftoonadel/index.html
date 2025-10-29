@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>EduCode | تعليم البرمجة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">EduCode | تعليم البرمجة</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home | الرئيسية</a></li>
+        <li><a href="#courses">Courses | الدورات</a></li>
+        <li><a href="#teachers">Teachers | الأساتذة</a></li>
+        <li><a href="#rate">Rate Us | قيّمنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to EduCode | مرحبًا بك في إديوكود</h1>
+    <p>Learn programming easily and professionally | تعلّم البرمجة بسهولة واحترافية</p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses | الدورات</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>React</li>
+    </ul>
+  </section>
+
+  <section id="teachers">
+    <h2>Our Teachers | أساتذتنا</h2>
+    <p>Experienced instructors in web and software development | أساتذة خبراء في تطوير الويب والبرمجيات</p>
+  </section>
+
+  <section id="rate">
+    <h2>Rate Us | قيّمنا</h2>
+    <div class="stars">
+      <span onclick="rate(1)">★</span>
+      <span onclick="rate(2)">★</span>
+      <span onclick="rate(3)">★</span>
+      <span onclick="rate(4)">★</span>
+      <span onclick="rate(5)">★</span>
+    </div>
+    <p id="rating-result"></p>
+  </section>
+
+  <footer>
+    <section id="login">
+  <h2>Login | تسجيل الدخول</h2>
+  <form onsubmit="return loginUser()">
+    <label for="username">Username | اسم المستخدم:</label>
+    <input type="text" id="username" required>
+
+    <label for="password">Password | كلمة المرور:</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Login | دخول</button>
+  </form>
+  <p id="login-message"></p>
+</section>
+
+    <p>© 2025 fatoon. No ads. | بدون إعلانات</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
