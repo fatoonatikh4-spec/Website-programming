@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+  <title>إضافة تطبيق – Add App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="myFunctions.js"></script>
+</head>
+<body>
+    <header>
+    <img src="images/logo.png" alt="Team Logo" class="logo">
+    <h1>إضافة تطبيق – Add Application</h1>
+    <nav>
+      <a href="home.html">الرئيسية – Home</a>
+      <a href="AboutUs.html">من نحن – About Us</a>
+      <a href="apps.html">التطبيقات – Applications</a>
+      <a href="add_app.html">إضافة تطبيق – Add App</a>
+    </nav>
+  </header>
+
+  <section>
+    <form id="appForm" onsubmit="return validateForm();">
+      <label>اسم التطبيق – App Name:</label>
+      <input type="text" id="appName" placeholder="English letters only">
+
+      <label>الشركة المصنعة – Developer:</label>
+      <input type="text" id="company" placeholder="English letters only">
+
+      <label>الموقع الإلكتروني – Website URL:</label>
+      <input type="url" id="website" placeholder="https://fatoonatika.com">
+
+      <label>مجاني؟ – Free?</label>
+      <select id="free">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>مجال الاستخدام – Usage Field:</label>
+      <select id="field">
+        <option value="AI">AI</option>
+        <option value="Robotics">Robotics</option>
+        <option value="Education">Education</option>
+        <option value="E-Commerce">E-Commerce</option>
+      </select>
+
+      <label>شرح مختصر  Description:</label>
+      <textarea id="desc" rows="3"></textarea>
+
+      <div class="buttons">
+        <button type="submit">إرسال  Submit</button>
+        <button type="reset">إعادة  Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025  فـتون  Ftoon</p>
+  </footer>
+</body>
+</html>

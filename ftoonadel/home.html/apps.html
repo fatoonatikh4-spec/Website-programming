@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+     <title>التطبيقات  Applications</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js"></script>
+</head>
+<body>
+<!-- نافذة التقييم -->
+  <div id="ratingModal" class="modal">
+    <div class="modal-content">
+      <h2>قيّم تجربتك Rate Your Experience</h2>
+      <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+      <p id="ratingMessage"></p>
+      <button id="closeModal">إغلاق  Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 فـتون  Ftoon</p>
+  </footer>
+    
+    <img src="images/logo.png" alt="Team Logo" class="logo">
+    <h1>التطبيقات  Applications</h1>
+    <nav>
+      <a href="home.html">الرئيسية  Home</a>
+      <a href="AboutUs.html">من نحن  About Us</a>
+      <a href="apps.html">التطبيقات  Applications</a>
+      <a href="add_app.html">إضافة تطبيق Add App</a>
+    </nav>
+  </header>
+
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>اسم التطبيق  App Name</th>
+          <th>الشركة المطورة  Developer</th>
+          <th>مجال الاستخدام  Field</th>
+          <th>مجاني / غير مجاني  Free / Paid</th>
+          <th>إظهار التفاصيل  Show Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ChatGPT -->
+        <tr>
+          <td>ChatGPT</td>
+          <td>OpenAI</td>
+          <td>AI Assistant</td>
+          <td>Free / Paid</td>
+          <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+          <td colspan="5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="80">
+            <p>موقع: <a href="https://chat.openai.com/">https://fatoonatika.com/</a></p>
+            <p>شرح: مساعد ذكي يعتمد على الذكاء الاصطناعي – Smart assistant powered by AI.</p>
+          </td>
+        </tr>
+        <!-- Gemini -->
+        <tr>
+          <td>Gemini</td>
+          <td>Google</td>
+          <td>Research / Chat</td>
+          <td>Free</td>
+          <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+          <td colspan="5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Google_Gemini_logo.svg" width="80">
+            <p>موقع: <a href="https://gemini.google.com/">https://gemini.google.com</a></p>
+            <p>شرح: مساعد ذكي من Google – Google’s AI assistant platform.</p>
+          </td>
+        </tr>
+        <!-- Copilot -->
+        <tr>
+          <td>Copilot</td>
+          <td>Microsoft</td>
+          <td>Productivity</td>
+          <td>Free / Paid</td>
+          <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+          <td colspan="5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Microsoft_Copilot_logo.svg" width="80">
+            <p>موقع: <a href="https://copilot.microsoft.com/">https://copilot.microsoft.com</a></p>
+            <p>شرح: أداة ذكاء اصطناعي لزيادة الإنتاجية – AI productivity tool.</p>
+          </td>
+        </tr>
+        <!-- Midjourney -->
+        <tr>
+          <td>Midjourney</td>
+          <td>Midjourney Inc.</td>
+          <td>Image Generation</td>
+          <td>Paid</td>
+          <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+          <td colspan="5">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Midjourney_Logo.png" width="80">
+            <p>موقع: <a href="https://www.midjourney.com/">https://www.midjourney.com</a></p>
+            <p>شرح: توليد صور فنية باستخدام الذكاء الاصطناعي – AI image generator.</p>
+          </td>
+        </tr>
+        <!-- Claude -->
+        <tr>
+          <td>Claude</td>
+          <td>Anthropic</td>
+          <td>Chatbot / Writing</td>
+          <td>Free / Paid</td>
+          <td><button class="toggle">إظهار التفاصيل</button></td>
+        </tr>
+        <tr class="details">
+          <td colspan="5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Claude_AI_logo.svg" width="80">
+            <p>موقع: <a href="https://claude.ai/">https://claude.ai</a></p>
+            <p>شرح: مساعد ذكي متقدم من Anthropic – Advanced AI chatbot.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 – فـتون – Ftoon</p>
+  </footer>
+</body>
+</html>
